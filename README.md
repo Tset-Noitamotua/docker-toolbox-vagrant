@@ -11,10 +11,10 @@ Ensure virtualization is enabled on your hardware. If you receive error messages
 
 ### Install Dependencies - Software
 
-The following packages are required to be downloaded (via OLEX download) in order to run *this* vagrant box in development mode:
+The following packages are required to be downloaded and installed
 
 - [Vagrant](https://vagrantup.com)
-- Docker Toolbox
+- [Docker Toolbox](https://https://www.docker.com/toolbox)
 
 ### Configure Your HOST
 
