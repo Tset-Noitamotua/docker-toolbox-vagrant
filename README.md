@@ -45,4 +45,10 @@ export HTTPS_PROXY=$myproxy
 export HTTPS_PROXY=$myproxy
 ```
 
-### Vagrant 101
+### Vagrant instead of `docker-machine`
+
+You can now provision any OS you wish, with any version of docker you wish, and connect to that using a private local IP address, instead of relying on `docker-machine` to do all of your `docker` server based commands. The best part is, that this machine is more easily managed and replicated, including cleanup. 
+
+I've included a sample `Vagrantfile` at the root of this directory, so if you want, you can use this as a seed for docker development. You can choose to connect the docker client to the daemon running in vagrant by using `docker -H tcp://192.168.33.10`, or by ssh'ing into the vagrant box, and just using `sudo docker` for anything you wish. (Alternatively, you can just `sudo su -` to change to root user, and do everything without `sudo` prepended.
+
+To get started with this Vagrantfile, just copy the `Vagrantfile` into a new directory of your choosing, and run `vagrant up`.
